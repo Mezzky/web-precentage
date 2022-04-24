@@ -1,0 +1,182 @@
+/* =============== CSS RESET =============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--svg-color);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* height: 200000px; */
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* CSS Variable */
+:root{
+    --tittle-color: #233551;
+    --light-color: #4f7fce;
+    --text-color: #ffffff;
+    --bg-color: #fff2b8;
+    --svg-color: #5e7956;
+    --bold-color: #a9ffad;
+}
+
+
+/* =============== MAIN STYLE =============== */
+.container{
+    box-sizing: border-box;
+    /* background-color: #5e7956; */
+    width: 100%;
+    padding: 100px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+}
+
+header{
+    margin: auto;
+    color: var(--text-color);
+    width: max-content;
+    padding: 0px 50px;
+    font-weight: bold;
+    border-top: 5px solid var(--tittle-color);
+    border-bottom: 5px solid var(--tittle-color);
+    margin-bottom: 30px;
+}
+
+header h3{
+    font-size: 30px;
+}
+
+.sejarah,.visi-misi,.logo,.struktur{
+    display: grid;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.sejarah p{
+    text-align: center;
+}
+
+.logo p{
+    text-align: center;
+}
+
+.logo img{
+    margin: auto;
+    width: 400px;
+    height: 450px;
+}
+
+.struktur-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.struktur .struktur-img img{
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px 5px rgba(0,0,0,.5);
+} 
+
+p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.active{
+    font-weight: bold;
+    color: var(--bold-color);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--tittle-color);
+    width: max-content;
+    padding: 10px 20px;
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px rgba(0,0,0,.5);
+}
+
+h2{
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+/* Button */
+.container .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .button a{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--tittle-color);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px rgba(0,0,0,.5);
+    transition: 100ms linear;
+}
+.container .button a:hover{
+    background-color: var(--light-color);
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+/* Produk */
+.produk .barang{
+    border-radius: 20px;
+    padding: 40px 0px;
+    background-color: var(--tittle-color);
+    border: 5px solid var(--light-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.produk .barang img{
+    box-shadow: 0px 10px 5px rgba(0,0,0,.5);
+    margin: auto;
+    border-radius: 45px;
+    width: 200px;
+    height: 200px;
+}
+
+.jasa{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.jasa .box{
+    border-radius: 20px;
+    padding: 40px 0px;
+    border: 5px solid var(--light-color);
+    width: 100%;
+    background-color: var(--tittle-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jasa img{
+    box-shadow: 0px 10px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+}

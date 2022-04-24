@@ -1,4 +1,4 @@
-/* CSS RESET */
+/* =============== CSS RESET =============== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
 html,
 body{
@@ -27,12 +27,12 @@ a{
     --light-color: #4f7fce;
     --text-color: #ffffff;
     --bg-color: #FCFCFF;
-    --svg-color: #B9D7B0;
+    --svg-color: #5e7956;
     --svg2-color: #D9FED8;
 }
 
 
-/*---------- MAIN STYLE ----------*/
+/* =============== MAIN STYLE =============== */
 
 /* Menu Bars */
 .menu-toggle{
@@ -185,9 +185,11 @@ header ul li a:hover{
 
 /* About */
 .about{
+    border-top: 5px solid #3b4937;
+    border-bottom: 5px solid #3b4937;
     background-color: var(--svg-color);
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -206,7 +208,7 @@ header ul li a:hover{
 }
 .about .tittle-about span{
     margin-top: -25px;
-    color: #fff;
+    color: #c2c2c2;
 }
 
 .about .content-about{
@@ -221,8 +223,8 @@ header ul li a:hover{
 }
 
 .about .content-about .about-img img{
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: -5px 5px 5px 5px rgba(0,0,0,.5);
 }
@@ -234,18 +236,15 @@ header ul li a:hover{
 }
 
 .about .content-about .box-intro p{
-    text-shadow: -5px 5px 5px rgba(66, 101, 255, 0.5);
     font-size: 30px;
     color: #ffffff;
-    font-weight: bold;
 }
 
 .about .content-about .box-intro a{
     box-shadow: -4px 4px 4px rgba(0,0,0,.5);
     background-color: var(--tittle-color);
     color: #fff;
-    text-align: center;
-    width: min-content;
+    width: 110px;
     padding: 10px 30px;
     font-weight: bold;
     font-size: 20px;
@@ -256,6 +255,10 @@ header ul li a:hover{
     background-color: var(--light-color);
     box-shadow: none;
     transform: translateY(2px);
+}
+
+.about .content-about .box-intro a i{
+    margin-left: 5px;
 }
 
 /* Report */
@@ -282,6 +285,7 @@ header ul li a:hover{
 }
 
 .report .container-report{
+    margin-top: 30px;
     display: grid;
     align-self: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -291,7 +295,7 @@ header ul li a:hover{
 .report .container-report .card{
     box-shadow: -5px 5px 5px rgba(0,0,0,.5);
     width: 300px;
-    height: 400px;
+    height: 350px;
     background-color: var(--tittle-color);
     display: flex;
     flex-direction: column;
@@ -307,16 +311,22 @@ header ul li a:hover{
 }
 
 .report .container-report .card .box-img svg{
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     fill: #fff;
+}
+
+.report .container-report .card span{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .report .container-report .card a{
     opacity: 0;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #53d1a7;
+    background-color: #50d1a7;
     color: #fff;
     font-weight: bold;
     transition: 200ms linear;
@@ -331,17 +341,19 @@ header ul li a:hover{
 
 /* Footer */
 .footer{
+    border-top: 5px solid #3b4937;
     margin-top: 50px;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 150px;
-    background-color: #9ab4e0;
+    background-color: var(--svg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .footer .medsos{
     position: relative;
     display: flex;
@@ -351,6 +363,7 @@ header ul li a:hover{
     flex-wrap: wrap;
     margin-right: 50px;
 }
+
 .footer .medsos li a{
     font-size: 2em;
     color: #fff;
@@ -361,6 +374,7 @@ header ul li a:hover{
 .footer .medsos li a:hover{
     transform: translateY(-10px);
 }
+
 .footer p{
     text-align: center;
     color: #fff;
@@ -370,6 +384,7 @@ header ul li a:hover{
 .fa-heart{
     color: rgb(194, 5, 78);
 }
+
 .fa-fire{
     color: orange;
 }
