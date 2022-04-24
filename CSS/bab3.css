@@ -1,7 +1,8 @@
 /* =============== CSS RESET =============== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
 html,
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: var(--svg-color);
@@ -10,15 +11,18 @@ body{
     scroll-behavior: smooth;
     /* height: 200000px; */
 }
-ul,li{
+
+ul,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 /* CSS Variable */
-:root{
+:root {
     --tittle-color: #233551;
     --light-color: #4f7fce;
     --text-color: #ffffff;
@@ -29,17 +33,17 @@ a{
 
 
 /* =============== MAIN STYLE =============== */
-.container{
+.container {
     box-sizing: border-box;
     /* background-color: #5e7956; */
     width: 100%;
-    padding: 100px;
+    padding: 150px;
     display: grid;
     align-items: center;
     gap: 20px;
 }
 
-header{
+header {
     margin: auto;
     color: var(--text-color);
     width: max-content;
@@ -50,27 +54,70 @@ header{
     margin-bottom: 30px;
 }
 
-header h3{
+header h3 {
     font-size: 30px;
 }
 
-.pendahuluan,.tujuan,.manfaat{
+.ringkasan, .tugas{
     display: grid;
-    gap: 15px;
+    gap: 50px;
     margin-bottom: 50px;
 }
 
-p{
+.ringkasan .table table{
+    border-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.ringkasan .table table th, tr, td{
+    border: 2px solid var(--tittle-color);
+}
+
+.ringkasan .table table th{
+    background-color: var(--tittle-color);
+    color: var(--text-color);
+}
+
+.ringkasan .table table tr{
+    background-color: var(--text-color);
+    color: #000;
+}
+
+.tugas .project-web .tahap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tugas .project-web .tahap-1{
+    margin-bottom: 0px;
+}
+
+.tugas .project-web .tahap-25 .hasil{
+    width: 30%;
+}
+
+.tugas .project-web .tahap img{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+}
+
+p {
     font-size: 20px;
     color: var(--text-color);
 }
 
-.active{
+.active {
     font-weight: bold;
     color: var(--bold-color);
 }
 
-h1{
+h1 {
     margin: auto;
     text-align: center;
     font-size: 25px;
@@ -79,33 +126,34 @@ h1{
     padding: 10px 20px;
     color: var(--text-color);
     border-radius: 10px;
-    box-shadow: 0px 10px 5px rgba(0,0,0,.5);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, .5);
 }
 
-h2{
+h2 {
     color: var(--text-color);
     font-size: 25px;
 }
 
 /* Button */
-.container .button{
+.container .button {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .button a{
+.container .button a {
     color: var(--text-color);
     font-size: 25px;
     font-weight: bold;
     background-color: var(--tittle-color);
     padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: 0px 5px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, .5);
     transition: 100ms linear;
 }
-.container .button a:hover{
+
+.container .button a:hover {
     background-color: var(--light-color);
     box-shadow: none;
     transform: translateY(2px);
